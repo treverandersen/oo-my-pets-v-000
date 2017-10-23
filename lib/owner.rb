@@ -61,7 +61,7 @@ class Owner
     if pets.empty? == false
       pets.clear
     end
-    
+
   end
 
   def list_pets
