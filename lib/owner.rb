@@ -53,6 +53,10 @@ class Owner
     @pets[:fishes].last.mood = 'happy'
   end
 
+  def mood=(mood)
+    @mood = mood
+  end
+  
   def sell_pets
     self.pets.each {|p| p.mood = 'nervous'}
 
