@@ -57,7 +57,7 @@ class Owner
     if pets.empty? == false
       pets.clear
     end
-    binding.pry
+    @mood = "nervous"
   end
 
   def list_pets
