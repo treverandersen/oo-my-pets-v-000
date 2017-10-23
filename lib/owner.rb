@@ -53,8 +53,8 @@ class Owner
     @pets[:fishes].last.mood = 'happy'
   end
 
-  
-  
+
+
   def sell_pets
     def mood=(mood)
       @mood = mood
