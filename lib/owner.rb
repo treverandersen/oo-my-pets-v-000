@@ -57,9 +57,9 @@ class Owner
     if pets.empty? == false
       pets.clear
     end
-    @pets[:dogs].last.mood = 'nervous'
-    @pets[:cats].last.mood = 'nervous'
-    @pets[:fishes].last.mood = 'nervous'
+    @pets[:dogs].mood = 'nervous'
+    @pets[:cats].mood = 'nervous'
+    @pets[:fishes].mood = 'nervous'
   end
 
   def list_pets
