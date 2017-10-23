@@ -53,7 +53,7 @@ class Owner
     @pets[:fishes].last.mood = 'happy'
   end
 
-  def sell_pets(pets)
+  def sell_pets
     self.pets.each {|p| p.mood = 'nervous'}
 
     if pets.empty? == false
