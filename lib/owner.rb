@@ -54,7 +54,10 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each { |o| binding.pry o.mood = 'nervous'}
+    self.pets.each do |o| 
+      binding.pry 
+      o.mood = 'nervous'
+    end
 
     if pets.empty? == false
       pets.clear
