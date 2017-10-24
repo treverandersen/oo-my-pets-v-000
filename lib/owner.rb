@@ -1,7 +1,7 @@
 require 'pry'
 class Owner
   # code goes here
-  attr_accessor :name, :pets
+  attr_accessor :name, :pets, :mood
   attr_reader :species
 
   @@owners = []
@@ -54,9 +54,16 @@ class Owner
   end
 
   def sell_pets
+    self.pets.each do |type, o|
+      o.each do |m|
+        m.mood = 'nervous'
+      end
+    end
+
     if pets.empty? == false
       pets.clear
     end
+
   end
 
   def list_pets
