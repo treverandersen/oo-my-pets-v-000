@@ -54,8 +54,8 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each do |o| 
-      binding.pry 
+    self.pets.each do |o|
+      binding.pry
       o.mood = 'nervous'
     end
 
@@ -63,7 +63,7 @@ class Owner
       pets.clear
     end
 
-  end 
+  end
 
   def list_pets
     return 'I have ' + @pets[:fishes].count.to_s + ' fish, ' + @pets[:dogs].count.to_s + ' dog(s), ' + 'and ' + @pets[:cats].count.to_s + ' cat(s).'
